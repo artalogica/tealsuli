@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Su — notebook</title>
+    <meta name="description" content="Personal site of Su — experience, portfolio, and blog." />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+
+    <nav class="terminal-nav" aria-label="Primary">
+      <div class="terminal-nav__inner">
+        <span class="terminal-nav__prompt">tealsu<span class="terminal-nav__at">@</span>site <span class="terminal-nav__path">~</span> %</span>
+        <ul class="terminal-nav__list">
+          <li><a href="#experience" class="terminal-nav__link">experience</a></li>
+          <li><a href="#portfolio" class="terminal-nav__link">portfolio</a></li>
+          <li><a href="#blog" class="terminal-nav__link">blog</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="page">
+      <section class="hero">
+        <div class="hero__row">
+          <div class="hero__text">
+            <!-- <p class="hero__comment">// software, robotics, art, ...</p> -->
+            <h1 class="hero__title">Su Li</h1>
+            <p class="hero__sub">
+              Undergrad @ CMU studying Computer Science + ML. My current resarch focus is on RL skills for manipulation and self-improving policies.
+            </p>
+          </div>
+          <figure class="polaroid hero__photo" data-tilt="4">
+            <span class="polaroid__frame">
+              <img class="polaroid__img" src="/profile.JPG" alt="Su Li" />
+            </span>
+            <figcaption class="polaroid__caption">half moon bay</figcaption>
+          </figure>
+        </div>
+
+        <div class="hero__socials">
+          <a href="#" class="hero__social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            <span>linkedin</span>
+          </a>
+          <a href="#" class="hero__social-link" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.104c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63a9.935 9.935 0 002.46-2.548l-.047-.02z"/>
+            </svg>
+            <span>twitter</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <h2 class="section__title">
+          Experience
+          <svg class="squiggle" viewBox="0 0 220 14" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M2 8 Q 18 -2, 34 8 T 66 8 T 98 8 T 130 8 T 162 8 T 194 8 T 218 8" />
+          </svg>
+        </h2>
+        
+        <ol class="journal">
+          <li class="journal__entry">
+            <div class="journal__when">2026 - Present</div>
+            <div class="journal__what">
+              <h3>Research Assistant, Katerina Fragkiadaki (CMU)</h3>
+              <!-- <p>First real production bug. First real production apology. Learned a lot both times.</p> -->
+            </div>
+          </li>
+          <li class="journal__entry">
+            <div class="journal__when">Summer 2026</div>
+            <div class="journal__what">
+              <h3>Software Engineer Intern, Crusoe</h3>
+              <!-- <p>Building the tools that build the tools. Mostly coffee-fueled debugging and small, stubborn fixes.</p> -->
+            </div>
+          </li>
+          <li class="journal__entry">
+            <div class="journal__when">Summer 2025</div>
+            <div class="journal__what">
+              <h3>Software Engineer Intern, MathWorks</h3>
+              <!-- <p>Ran experiments, broke a few servers, learned to write papers that didn&rsquo;t sound like error logs.</p> -->
+            </div>
+          </li>
+          <li class="journal__entry">
+            <div class="journal__when">2024 - 2025</div>
+            <div class="journal__what">
+              <h3>Research Assistant, Claw Lab (CMU)</h3>
+              <!-- <p>First real production bug. First real production apology. Learned a lot both times.</p> -->
+            </div>
+          </li>
+          <li class="journal__entry">
+            <div class="journal__when">2022 - 2023 </div>
+            <div class="journal__what">
+              <h3>Software Engineer Intern, AM Energization</h3>
+              <!-- <p>First real production bug. First real production apology. Learned a lot both times.</p> -->
+            </div>
+          </li>
+          <li class="journal__entry">
+            <div class="journal__when">2022 - 2023</div>
+            <div class="journal__what">
+              <h3>Research Assistant, play2PREVENT Lab (Yale)</h3>
+              <!-- <p>First real production bug. First real production apology. Learned a lot both times.</p> -->
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section id="portfolio" class="section">
+        <h2 class="section__title">
+          Portfolio
+          <svg class="squiggle" viewBox="0 0 220 14" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M2 8 Q 18 -2, 34 8 T 66 8 T 98 8 T 130 8 T 162 8 T 194 8 T 218 8" />
+          </svg>
+        </h2>
+
+        <div class="polaroids">
+          <a class="polaroid" href="#" data-tilt="-3">
+            <span class="polaroid__frame">
+              <span class="polaroid__img" aria-hidden="true"></span>
+            </span>
+            <span class="polaroid__caption">Project One — a thing I made</span>
+          </a>
+          <a class="polaroid" href="#" data-tilt="2">
+            <span class="polaroid__frame">
+              <span class="polaroid__img" aria-hidden="true"></span>
+            </span>
+            <span class="polaroid__caption">Project Two — another thing</span>
+          </a>
+          <a class="polaroid" href="#" data-tilt="-2">
+            <span class="polaroid__frame">
+              <span class="polaroid__img" aria-hidden="true"></span>
+            </span>
+            <span class="polaroid__caption">Project Three — a good one</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="blog" class="section">
+        <h2 class="section__title">
+          Blog
+          <svg class="squiggle" viewBox="0 0 220 14" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M2 8 Q 18 -2, 34 8 T 66 8 T 98 8 T 130 8 T 162 8 T 194 8 T 218 8" />
+          </svg>
+        </h2>
+
+        <ul class="post-list">
+          <li class="post-list__row">
+            <a href="#" class="post-list__title"><span class="pencil" aria-hidden="true">&#9998;</span> Notes on shipping small things</a>
+            <span class="post-list__date">Jul 2026</span>
+          </li>
+          <li class="post-list__row">
+            <a href="#" class="post-list__title"><span class="pencil" aria-hidden="true">&#9998;</span> What a terminal taught me about design</a>
+            <span class="post-list__date">Apr 2026</span>
+          </li>
+          <li class="post-list__row">
+            <a href="#" class="post-list__title"><span class="pencil" aria-hidden="true">&#9998;</span> A year of Tuesdays</a>
+            <span class="post-list__date">Jan 2026</span>
+          </li>
+        </ul>
+      </section>
+
+      <footer class="footer">
+        <!-- <p class="footer__line">$ echo "thanks for stopping by"</p> -->
+        <div class="footer__links">
+          <a href="#">email</a>
+          <a href="#">github</a>
+          <a href="#">linkedin</a>
+        </div>
+      </footer>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
