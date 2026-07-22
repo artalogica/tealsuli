@@ -676,6 +676,6 @@ body.modal-open {
   }
 
   .hero__photo {
-    width: 160px;
+    width: min(70%, 280px);
   }
 }
