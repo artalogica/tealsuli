@@ -54,7 +54,7 @@ body {
   background-color: var(--paper);
   color: var(--ink);
   font-family: var(--font-hand);
-  font-size: 19px;
+  font-size: 24px;
   line-height: 1.6;
 }
 
@@ -270,8 +270,8 @@ img {
 
 .hero__photo {
   flex: none;
-  width: 250px;
-  margin-right: 8%;
+  width: 380px;
+  margin-right: 4%;
 }
 
 .hero__comment {
@@ -293,7 +293,7 @@ img {
   gap: 7px;
   text-decoration: none;
   color: var(--ink-soft);
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .hero__social-link svg {
@@ -323,7 +323,7 @@ img {
   margin-top: 18px;
   max-width: 46ch;
   color: var(--ink-soft);
-  font-size: 20px;
+  font-size: 25px;
 }
 
 /* ---------------------------------------------------------------
@@ -380,7 +380,7 @@ img {
 }
 
 .journal__what h3 {
-  font-size: 22px;
+  font-size: 27px;
   font-weight: 400;
 }
 
@@ -402,10 +402,25 @@ img {
 
 .polaroid {
   display: block;
+  border: none;
+  background: none;
+  padding: 0;
+  font: inherit;
+  text-align: left;
   text-decoration: none;
   color: var(--ink);
   transform: rotate(calc(var(--tilt, 0) * 1deg));
   transition: transform 0.18s ease-out;
+}
+
+button.polaroid {
+  cursor: none;
+}
+
+@media (pointer: coarse) {
+  button.polaroid {
+    cursor: pointer;
+  }
 }
 
 .polaroid:hover,
@@ -443,14 +458,23 @@ img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  object-position: center;
   background:
     linear-gradient(135deg, #e7ddc4, #cfc2a0);
+}
+
+.polaroid__img--left {
+  object-position: left center;
+}
+
+.polaroid__img--top {
+  object-position: center 25%;
 }
 
 .polaroid__caption {
   display: block;
   padding: 12px 4px 22px;
-  font-size: 15px;
+  font-size: 23px;
   color: var(--ink-soft);
 }
 
@@ -473,7 +497,7 @@ img {
 
 .post-list__title {
   text-decoration: none;
-  font-size: 21px;
+  font-size: 26px;
   color: var(--ink);
   position: relative;
 }
@@ -528,6 +552,99 @@ img {
 }
 
 /* ---------------------------------------------------------------
+   Photo modal — an enlarged polaroid with room for text underneath
+--------------------------------------------------------------- */
+body.modal-open {
+  overflow: hidden;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.modal[hidden] {
+  display: none;
+}
+
+.modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(35, 32, 26, 0.6);
+}
+
+.modal__panel {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  background: #fffdf7;
+  padding: 26px 26px 32px;
+  box-shadow: 0 24px 60px rgba(35, 32, 26, 0.35);
+  transform: rotate(-1deg);
+}
+
+.modal__close {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  border: none;
+  background: none;
+  font-size: 26px;
+  line-height: 1;
+  color: var(--ink-soft);
+  cursor: none;
+  padding: 6px;
+}
+
+@media (pointer: coarse) {
+  .modal__close {
+    cursor: pointer;
+  }
+}
+
+.modal__close:hover,
+.modal__close:focus-visible {
+  color: var(--margin-accent);
+}
+
+.modal__frame-slot .polaroid__frame {
+  padding: 14px 14px 0;
+}
+
+.modal__caption {
+  margin-top: 18px;
+  font-size: 29px;
+}
+
+.modal__desc {
+  margin-top: 10px;
+  color: var(--ink-soft);
+  font-size: 25px;
+}
+
+.modal__github,
+.modal__itch {
+  margin-top: 14px;
+  font-size: 22px;
+}
+
+.modal__github svg,
+.modal__itch svg {
+  width: 21px;
+  height: 21px;
+}
+
+.modal__github[hidden],
+.modal__itch[hidden] {
+  display: none;
+}
+
+/* ---------------------------------------------------------------
    Responsive
 --------------------------------------------------------------- */
 @media (max-width: 640px) {
@@ -559,6 +676,6 @@ img {
   }
 
   .hero__photo {
-    width: 150px;
+    width: 160px;
   }
 }
