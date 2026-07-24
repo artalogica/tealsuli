@@ -53,8 +53,8 @@ body {
   min-height: 100dvh;
   background-color: var(--paper);
   color: var(--ink);
-  font-family: var(--font-hand);
-  font-size: 24px;
+  font-family: var(--font-mono);
+  font-size: 14px;
   line-height: 1.6;
 }
 
@@ -293,6 +293,7 @@ img {
   gap: 7px;
   text-decoration: none;
   color: var(--ink-soft);
+  font-family: var(--font-hand);
   font-size: 18px;
 }
 
@@ -313,6 +314,7 @@ img {
 }
 
 .hero__title {
+  font-family: var(--font-hand);
   font-size: clamp(48px, 9vw, 84px);
   line-height: 1;
   transform: rotate(-1.2deg);
@@ -323,7 +325,7 @@ img {
   margin-top: 18px;
   max-width: 46ch;
   color: var(--ink-soft);
-  font-size: 25px;
+  font-size: 14px;
 }
 
 /* ---------------------------------------------------------------
@@ -337,6 +339,7 @@ img {
 .section__title {
   display: inline-flex;
   flex-direction: column;
+  font-family: var(--font-hand);
   font-size: clamp(30px, 5vw, 40px);
   margin-bottom: 26px;
   transform: rotate(-0.6deg);
@@ -374,13 +377,14 @@ img {
 .journal__when {
   font-family: var(--font-mono);
   font-size: 13px;
+  font-style: italic;
   color: var(--ink-soft);
   padding-top: 4px;
   white-space: nowrap;
 }
 
 .journal__what h3 {
-  font-size: 27px;
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -388,6 +392,7 @@ img {
   margin-top: 6px;
   color: var(--ink-soft);
   max-width: 56ch;
+  font-size: 12px;
 }
 
 /* ---------------------------------------------------------------
@@ -474,7 +479,7 @@ button.polaroid {
 .polaroid__caption {
   display: block;
   padding: 12px 4px 22px;
-  font-size: 23px;
+  font-size: 14px;
   color: var(--ink-soft);
 }
 
@@ -497,7 +502,7 @@ button.polaroid {
 
 .post-list__title {
   text-decoration: none;
-  font-size: 26px;
+  font-size: 16px;
   color: var(--ink);
   position: relative;
 }
@@ -618,19 +623,18 @@ body.modal-open {
 
 .modal__caption {
   margin-top: 18px;
-  font-size: 29px;
+  font-size: 14px;
 }
 
 .modal__desc {
   margin-top: 10px;
   color: var(--ink-soft);
-  font-size: 25px;
+  font-size: 12px;
 }
 
 .modal__github,
 .modal__itch {
   margin-top: 14px;
-  font-size: 22px;
 }
 
 .modal__github svg,
